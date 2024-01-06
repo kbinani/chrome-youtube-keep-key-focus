@@ -1,0 +1,14 @@
+{
+	"name": "Keep key focus on YouTube",
+	"version": "0.0.0",
+	"manifest_version": 2,
+	"description": "When you touch YouTube seekbar with the mouse, the focus is transferred to the seekbar and keyboard shortcuts become unavailable. This extension prevents this behavior",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.youtube.com/*"
+			],
+			"js": ["main.js"]
+		}
+	]
+}
